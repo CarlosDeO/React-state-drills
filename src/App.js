@@ -9,6 +9,7 @@ import Bomb from './state-drills/bomb';
 import HelloWorld from './state-drills/HelloWorld';
 import Tabs from './state/Tabs';
 import RouletteGun from './state-drills/RouletteGun';
+import Accordion from './state-drills/ Accordion';
 
 // make 2 tooltips here and another inside the App directly
 const firstTooltip = (
@@ -31,15 +32,31 @@ const tabsProp = [
     content: 'Fugit, sapiente aspernatur corporis velit, dolor eum reprehenderit provident ipsam, maiores incidunt repellat! Facilis, neque doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam exercitationem quos consectetur expedita consequatur.' },
 ];
 
+const sections = [
+  {
+    title: 'Section 1',
+    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+  },
+  {
+    title: 'Section 2',
+    content: 'Cupiditate tenetur aliquam necessitatibus id distinctio quas nihil ipsam nisi modi!',
+  },
+  {
+    title: 'Section 3',
+    content: 'Animi amet cumque sint cupiditate officia ab voluptatibus libero optio et?',
+  },
+]
+
 function App() {
   return (
     <main className='App'>
         {/* <Tabs tabs={tabsProp} /> */}
-        
 
-        <RouletteGun />
+        <Accordion sections={sections} />
+
+        {/* <RouletteGun />
         <HelloWorld /> 
-        <Bomb />  
+        <Bomb />   */}
         
         {/* <Counter count={123} steps={2}/> */}
         {/* <TheDate /> */}
